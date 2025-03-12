@@ -34,3 +34,19 @@ O comando go mod init cria um novo arquivo go.mod no diretório atual. Este arqu
 Seria como se fosse um npm init.
 
 */
+
+package main
+
+import (
+	"fmt"
+)
+
+func get_started() {
+	fmt.Println("Para começar a utilizar o Go, precisamos de um editor de texto ou IDE e um compilador.")
+	fmt.Println("Instale o Go do site oficial: https://golang.org/dl/")
+	fmt.Println("Verifique a instalação com `go version`.")
+	fmt.Println("Sugiro a instalação do Visual Studio Code como IDE.")
+	fmt.Println("Instale a extensão Go no VS Code e atualize as ferramentas Go.")
+	fmt.Println("Crie um módulo Go com `go mod init example.com/hello`.")
+	fmt.Println("O comando `go mod init` cria um arquivo go.mod com informações sobre o módulo.")
+}
