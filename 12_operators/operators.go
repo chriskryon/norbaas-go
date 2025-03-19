@@ -12,6 +12,16 @@ Operadores Aritméticos:
 
 Operadores de Atribuição:
 =  serve para atribuição
++= serve para adição e atribuição
+-= serve para subtração e atribuição
+*= serve para multiplicação e atribuição
+/= serve para divisão e atribuição
+%= serve para módulo e atribuição
+&= serve para AND bit a bit e atribuição
+|= serve para OR bit a bit e atribuição
+^= serve para XOR bit a bit e atribuição
+<<= serve para deslocamento à esquerda e atribuição
+>>= serve para deslocamento à direita e atribuição
 
 Operadores de Comparação:
 == serve para igualdade
@@ -56,6 +66,26 @@ func main() {
 	// Operadores de Atribuição
 	c := 10
 	fmt.Println("Atribuição:", c)
+	c += 3
+	fmt.Println("Adição e atribuição:", c)
+	c -= 3
+	fmt.Println("Subtração e atribuição:", c)
+	c *= 3
+	fmt.Println("Multiplicação e atribuição:", c)
+	c /= 3
+	fmt.Println("Divisão e atribuição:", c)
+	c %= 3
+	fmt.Println("Módulo e atribuição:", c)
+	c &= 3
+	fmt.Println("AND bit a bit e atribuição:", c)
+	c |= 3
+	fmt.Println("OR bit a bit e atribuição:", c)
+	c ^= 3
+	fmt.Println("XOR bit a bit e atribuição:", c)
+	c <<= 3
+	fmt.Println("Deslocamento à esquerda e atribuição:", c)
+	c >>= 3
+	fmt.Println("Deslocamento à direita e atribuição:", c)
 
 	// Operadores de Comparação
 	fmt.Println("Igualdade:", a == b)
@@ -73,9 +103,10 @@ func main() {
 
 	// Operadores Bitwise
 	f, g := 10, 2
-	fmt.Println("AND bit a bit:", f&g)
-	fmt.Println("OR bit a bit:", f|g)
-	fmt.Println("XOR bit a bit:", f^g)
-	fmt.Println("Deslocamento à esquerda:", f<<g)
-	fmt.Println("Deslocamento à direita:", f>>g)
+	// Operadores Bitwise
+	fmt.Println("AND bit a bit:", f&g)            // AND bit a bit: compara cada bit dos operandos e retorna 1 se ambos os bits forem 1
+	fmt.Println("OR bit a bit:", f|g)             // OR bit a bit: compara cada bit dos operandos e retorna 1 se pelo menos um dos bits for 1
+	fmt.Println("XOR bit a bit:", f^g)            // XOR bit a bit: compara cada bit dos operandos e retorna 1 se os bits forem diferentes
+	fmt.Println("Deslocamento à esquerda:", f<<g) // Deslocamento à esquerda: desloca os bits de f para a esquerda g vezes
+	fmt.Println("Deslocamento à direita:", f>>g)  // Deslocamento à direita: desloca os bits de f para a direita g vezes
 }
