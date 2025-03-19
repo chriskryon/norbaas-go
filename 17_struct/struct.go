@@ -19,9 +19,11 @@ const pessoa: Pessoa = {
 
 */
 
-
 package main
-import ("fmt")
+
+import (
+	"fmt"
+)
 
 type Carro struct {
 	modelo string
@@ -57,5 +59,4 @@ func main() {
 	fmt.Println("Ano: ", carro2.ano)
 	fmt.Println("Marca: ", carro2.marca)
 	fmt.Println("Preço: ", carro2.preco)
-}
 }
